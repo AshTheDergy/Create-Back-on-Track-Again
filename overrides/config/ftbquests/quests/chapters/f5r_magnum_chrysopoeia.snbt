@@ -1,0 +1,77 @@
+{
+	id: "280FB9025B13D0F4"
+	group: "6F42926B3F0C534A"
+	order_index: 5
+	filename: "f5r_magnum_chrysopoeia"
+	title: "&f5&r Magnum Chrysopoeia"
+	icon: "kubejs:copper_atom"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.0d
+			y: -2.0d
+			dependencies: ["20329543D3DB8D7F"]
+			hide: true
+			id: "21C32C2300613088"
+			tasks: [{
+				id: "759A780D55D9143D"
+				type: "item"
+				item: "kubejs:copper_atom"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["20329543D3DB8D7F"]
+			hide: true
+			id: "38749F4926263EC4"
+			tasks: [{
+				id: "67ADA1BA344AA0B0"
+				type: "item"
+				item: "kubejs:gold_atom"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["20329543D3DB8D7F"]
+			hide: true
+			id: "000013171238609D"
+			tasks: [{
+				id: "48F2466F5E074DB8"
+				type: "item"
+				item: "kubejs:zinc_atom"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: [
+				"38749F4926263EC4"
+				"43CA8A65355D9A36"
+			]
+			id: "7CD174B1E85730A7"
+			tasks: [{
+				id: "7398B0671A389B10"
+				type: "item"
+				item: "kubejs:geld_atom"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: [
+				"000013171238609D"
+				"21C32C2300613088"
+			]
+			id: "43CA8A65355D9A36"
+			tasks: [{
+				id: "48408B4B5C39410C"
+				type: "item"
+				item: "kubejs:brass_atom"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
