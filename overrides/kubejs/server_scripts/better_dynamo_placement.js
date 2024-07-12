@@ -1,3 +1,4 @@
+// priority: 0
 // Block Placement
 
 function opposite(face) {

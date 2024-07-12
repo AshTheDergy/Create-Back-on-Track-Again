@@ -1,8 +1,4 @@
 JEIEvents.hideItems(event => {
-	event.hide('tacz:ammo')
-	event.hide('tacz:attachment')
-	event.hide('tacz:modern_kinetic_gun')
-
     event.hide('ae2:facade')
 	event.hide('thermal:cinnabar_dust')
 

@@ -1,3 +1,4 @@
+// priority: 2
 let mystery_leaves_but_no_gapples =
 {
     "type": "minecraft:block",

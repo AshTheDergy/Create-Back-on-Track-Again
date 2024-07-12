@@ -4,12 +4,12 @@ layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
   last_edited_time = 1720675829167
-  is_enabled = true
+  is_enabled = false
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:a9331fca-06fe-4a11-83cd-5b457d8b9173-1720675821672] = [groups:][instances:]
+  [loading_requirement_container_meta:46d1c17f-2b2d-4c45-8944-48d077d15708-1720779172621] = [groups:][instances:]
 }
 
 menu_background {

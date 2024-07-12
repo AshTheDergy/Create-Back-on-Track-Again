@@ -20,8 +20,6 @@ key_key.smoothCamera:key.keyboard.unknown:NONE
 key_key.fullscreen:key.keyboard.f11:NONE
 key_key.spectatorOutlines:key.keyboard.unknown:NONE
 key_key.swapOffhand:key.keyboard.f:NONE
-key_key.saveToolbarActivator:key.keyboard.c:NONE
-key_key.loadToolbarActivator:key.keyboard.x:NONE
 key_key.advancements:key.keyboard.l:NONE
 key_key.hotbar.1:key.keyboard.1:NONE
 key_key.hotbar.2:key.keyboard.2:NONE
@@ -179,3 +177,14 @@ key_key.occultism.familiar.fairy_familiar:key.keyboard.unknown:NONE
 key_key.occultism.familiar.mummy_familiar:key.keyboard.unknown:NONE
 key_key.occultism.familiar.beaver_familiar:key.keyboard.unknown:NONE
 key_key.configured.open_mod_list:key.keyboard.unknown:NONE
+key_key.tacz.inspect.desc:key.keyboard.h
+key_key.tacz.reload.desc:key.keyboard.r
+key_key.tacz.shoot.desc:key.mouse.left
+key_key.tacz.interact.desc:key.keyboard.x
+key_key.tacz.fire_select.desc:key.keyboard.g
+key_key.tacz.aim.desc:key.mouse.right
+key_key.tacz.refit.desc:key.keyboard.z
+key_key.tacz.zoom.desc:key.keyboard.v
+key_key.tacz.open_config.desc:key.keyboard.t:ALT
+key_key.saveToolbarActivator:key.keyboard.unknown
+key_key.loadToolbarActivator:key.keyboard.unknown

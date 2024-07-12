@@ -1,3 +1,4 @@
+// priority: 1
 global.cachedSeed = undefined
 global.cachedAlchemyData = {}
 

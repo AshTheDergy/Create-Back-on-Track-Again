@@ -1,3 +1,4 @@
+// priority: 5
 PlayerEvents.loggedIn(event => {
     // Check if player doesn't have "starting_items" stage yet
     if (!event.player.stages.has('starting_items')) {

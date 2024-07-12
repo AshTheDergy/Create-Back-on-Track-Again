@@ -1,4 +1,8 @@
-// priority: 0
+// For some reason the machine recipes dont want to work in recipes.js
+// recipes.js#75: Error occurred while handling event 'ServerEvents.recipes': ReferenceError: "andesiteMachine" is not defined.
+// so yeah thats why they're seperated
+
+
 
 var seed
 var log = []
@@ -54,7 +58,6 @@ function ifiniDeploying(output, input, tool) {
 }
 
 ServerEvents.recipes(event => {
-    log.push('Registering Recipes')
 	andesiteMachine(event)
 	copperMachine(event)
 	brassMachine(event)
@@ -63,11 +66,10 @@ ServerEvents.recipes(event => {
 	explosiveMachine(event)
 	chocolate(event)
 	invarMachine(event)
-	enderMachine(event)
 	fluixMachine(event)
-	log.push('Recipes Updated')
 })
 
+// Scripts
 function andesiteMachine(event) {
 
 	event.replaceInput({ id: CR("crafting/kinetics/brass_hand") }, '#forge:plates/brass', CR('golden_sheet'))
@@ -493,7 +495,7 @@ function brassMachine(event) {
 		' HS',
 		'HTH',
 		'TMR'
-	], {M: KJ('brass_machine'), H: 'alloyed:steel_sheet', R: CR('copper_sheet'), S: Item.of('createindustry:screwdriver'), T: KJ('diamond_tube')})  .damageIngredient(CI('screwdriver'),10)
+	], {M: KJ('brass_machine'), H: 'alloyed:steel_sheet', R: CR('copper_sheet'), S: Item.of('createindustry:screwdriver'), T: KJ('diamond_tube')}).damageIngredient(CI('screwdriver'),10)
 
 	event.remove({output:  CI('steel_distillation_controller')})
 	event.shaped( CI('steel_distillation_controller'), [
@@ -795,7 +797,6 @@ function explosiveMachine(event){
 
 function invarMachine(event) {
 	event.remove({output:'createaddition:capacitor'})
-    event.remove({})
 	event.custom({
 		"type":"createaddition:charging",
 		"input": {

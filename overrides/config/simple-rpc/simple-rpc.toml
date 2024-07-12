@@ -206,7 +206,7 @@
 
 [generic]
 	#The first line of text under the app name
-	description = "Playing Back on Track"
+	description = "Playing Back on Track Again"
 	#The second line of text under the app name
 	state = "here be factories"
 	#The Asset ID/URL of the image to display as the large image

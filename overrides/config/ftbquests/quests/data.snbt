@@ -1,6 +1,6 @@
 {
 	version: 13
-	title: "Create: Back on Track"
+	title: "Create: Back on Track Again"
 	icon: "create:track"
 	default_reward_team: true
 	default_consume_items: false
