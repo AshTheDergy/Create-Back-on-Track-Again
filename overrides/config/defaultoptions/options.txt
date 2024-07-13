@@ -36,8 +36,8 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:["vanilla","mod_resources","Supplementaries Generated Pack","create:legacy_copper","resources/Create_Style_Redstone_Pen.zip","resources/CreatedSimpleStorage1.3.zip","resources/CreatedUpdatedv0.3.zip","resources/BetterVanillaBuildingV2.99.zip","resources/UI thing"]
-incompatibleResourcePacks:[]
+resourcePacks:["vanilla","mod_resources","file/BetterVanillaBuildingV2.87.zip","Supplementaries Generated Pack","resources/Create_Style_Redstone_Pen","resources/Created--Updated","create:legacy_copper","file/c418-music-only-e1590.zip","resources/CreateSimpleStorage1.1","resources/simis_redzits"]
+incompatibleResourcePacks:["file/BetterVanillaBuildingV2.87.zip","resources/Created--Updated","file/c418-music-only-e1590.zip"]
 lastServer:
 lang:en_us
 soundDevice:JACK Default
@@ -75,7 +75,7 @@ syncChunkWrites:false
 showAutosaveIndicator:true
 allowServerListing:true
 soundCategory_master:1.0
-soundCategory_music:0.0
+soundCategory_music:1.0
 soundCategory_record:0.38380283
 soundCategory_weather:1.0
 soundCategory_block:1.0

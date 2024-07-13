@@ -3,7 +3,7 @@
 [Settings]
 
 	[Settings."FPS Counter"]
-		"FPS Counter Distance" = 12
+		"FPS Counter Distance" = 8
 		"Display FPS Counter (OFF, SIMPLE, ADVANCED)" = "ADVANCED"
 
 	[Settings.Misc]
@@ -13,7 +13,6 @@
 		"Cloud Height [Raw, Default 256]" = 256
 		"Chunk Fade In Quality (OFF, FAST, FANCY)" = "FANCY"
 		"Hide JEI Until Searching" = true
-		"Enable Extended Server View Distance" = true
 
 	[Settings.Zoom]
 		"Cinematic Camera Mode (OFF, VANILLA, MULTIPLIED)" = "OFF"
@@ -25,8 +24,8 @@
 
 	[Settings."True Darkness"]
 		#Allowed Values: PITCH_BLACK, REALLY_DARK, DARK, DIM
-		"Darkness Setting (PITCH_BLACK, REALLY_DARK, DARK, DIM)" = "DARK"
-		"Use True Darkness" = true
+		"Darkness Setting (PITCH_BLACK, REALLY_DARK, DARK, DIM)" = "PITCH_BLACK"
+		"Use True Darkness" = false
 
 		[Settings."True Darkness".Advanced]
 			#Range: 0.0 ~ 1.0
@@ -49,8 +48,8 @@
 
 	[Settings."Entity Distance"]
 		"Enable Max Distance Checks" = true
-		"(Entity) Max Vertical Render Distance [Raw, Default 32]" = 32
-		"(Entity) Max Horizontal Render Distance [Squared, Default 64^2]" = 4096
+		"(Entity) Max Vertical Render Distance [Raw, Default 32]" = 64
+		"(Entity) Max Horizontal Render Distance [Squared, Default 64^2]" = 1024
 		"(TileEntity) Max Horizontal Render Distance [Squared, Default 64^2]" = 4096
 		"(TileEntity) Max Vertical Render Distance [Raw, Default 32]" = 32
 

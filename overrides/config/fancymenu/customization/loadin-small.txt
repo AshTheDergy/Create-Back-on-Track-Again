@@ -1,97 +1,78 @@
-type = fancymenu_layout
+type = menu
 
-layout-meta {
-  identifier = drippy_loading_overlay
-  render_custom_elements_behind_vanilla = false
-  last_edited_time = 1720675829167
-  is_enabled = false
-  randommode = false
+customization-meta {
+  identifier = de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen
   randomgroup = 1
+  renderorder = foreground
+  randommode = false
   randomonlyfirsttime = false
-  layout_index = 0
-  [loading_requirement_container_meta:46d1c17f-2b2d-4c45-8944-48d077d15708-1720779172621] = [groups:][instances:]
-}
-
-menu_background {
-  color = #2c1430
-  background_type = drippy_color_background
+  smallerthanwidth = 1100
 }
 
 customization {
-  action = backgroundoptions
   keepaspectratio = false
+  action = backgroundoptions
 }
 
-scroll_list_customization {
-  preserve_scroll_list_header_footer_aspect_ratio = true
-  render_scroll_list_header_shadow = true
-  render_scroll_list_footer_shadow = true
-  show_scroll_list_header_footer_preview_in_editor = false
-  repeat_scroll_list_header_texture = false
-  repeat_scroll_list_footer_texture = false
+customization {
+  orientation = top-left
+  hidden = true
+  x = 228
+  width = 504
+  action = deep_customization_element:drippy_overlay_logo
+  actionid = 84dcc7ae-198f-498c-9e95-a2bc8b80ecf41679525058555
+  y = 189
+  height = 126
 }
 
-vanilla_button {
-  button_element_executable_block_identifier = 537cdd21-fe17-42b7-9e16-33d3ec5a5d25-1720675591854
-  [executable_block:537cdd21-fe17-42b7-9e16-33d3ec5a5d25-1720675591854][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mojang_logo
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = vanilla
-  x = 143
-  y = 133
-  width = 354
-  height = 88
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 1c6907b5-bee9-48cb-81f3-bbeeb095c816-1720675591853
-  [loading_requirement_container_meta:1c6907b5-bee9-48cb-81f3-bbeeb095c816-1720675591853] = [groups:][instances:]
-  is_hidden = true
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
+customization {
+  custom_color_hex = #2c1430
+  orientation = top-left
+  hidden = false
+  x = -1000000
+  width = 0
+  action = deep_customization_element:drippy_overlay_background
+  actionid = 6d2d32b4-5146-405c-bca8-57ea3f2231191679525058584
+  y = -1000000
+  height = 0
 }
 
-vanilla_button {
-  button_element_executable_block_identifier = 8ca5a552-7f27-4c6e-b0ed-67e0f196958c-1720675591854
-  [executable_block:8ca5a552-7f27-4c6e-b0ed-67e0f196958c-1720675591854][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = progress_bar
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = vanilla
-  x = 143
-  y = 289
-  width = 354
+customization {
+  orientation = top-left
+  hidden = false
+  x = 228
+  width = 504
+  action = deep_customization_element:drippy_overlay_progress_bar
+  actionid = b67fb59d-aafc-475d-a70f-a507ba1d5be11679525058585
+  y = 414
   height = 10
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = eb8b4325-1d96-4c2f-9452-851d9b9cf912-1720675591854
-  [loading_requirement_container_meta:eb8b4325-1d96-4c2f-9452-851d9b9cf912-1720675591854] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
+}
+
+customization {
+  path = kubejs/assets/kubejs/textures/images/logo.png
+  orientation = mid-centered
+  x = -177
+  width = 359
+  action = addtexture
+  actionid = 747914f5-1854-4385-b4e1-d18560fcc6bd1679525097162
+  y = -101
+  height = 202
+}
+
+customization {
+  orientation = mid-centered
+  basecolor = #ffff00
+  shadow = true
+  rotation = 20.0
+  scale = 1.0
+  refresh = false
+  vr:showif:oslinux = true
+  bouncing = true
+  vanilla-like = false
+  x = -159
+  actionid = 46e3e1cc-2b18-4810-a91b-bb6399f433041679772231550
+  action = addsplash
+  y = 39
+  text = I Use Arch BTW! 
 }
 

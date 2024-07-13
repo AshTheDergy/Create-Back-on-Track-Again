@@ -1,5 +1,4 @@
 {
-  "auroral_garden_enabled": true,
   "bamboo_grove_enabled": true,
   "bayou_enabled": true,
   "bog_enabled": true,
@@ -48,7 +47,6 @@
   "rocky_shrubland_enabled": true,
   "scrubland_enabled": true,
   "seasonal_forest_enabled": true,
-  "seasonal_orchard_enabled": true,
   "shrubland_enabled": true,
   "snowy_coniferous_forest_enabled": true,
   "snowy_fir_clearing_enabled": true,

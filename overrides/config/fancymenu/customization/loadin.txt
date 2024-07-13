@@ -1,148 +1,79 @@
-type = fancymenu_layout
+type = menu
 
-layout-meta {
-  identifier = drippy_loading_overlay
-  render_custom_elements_behind_vanilla = false
-  last_edited_time = 1720779272170
-  is_enabled = true
-  randommode = false
+customization-meta {
+  identifier = de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen
   randomgroup = 1
+  biggerthanwidth = 1100
+  renderorder = foreground
+  randommode = false
   randomonlyfirsttime = false
-  layout_index = 0
-  [loading_requirement_container_meta:f00389c4-e76a-4b70-a841-89ff9c4fcbaa-1720779231579] = [groups:][instances:]
-}
-
-menu_background {
-  color = #2c1430
-  background_type = drippy_color_background
+  biggerthanheight = -1
 }
 
 customization {
-  action = backgroundoptions
   keepaspectratio = false
+  action = backgroundoptions
 }
 
-scroll_list_customization {
-  preserve_scroll_list_header_footer_aspect_ratio = true
-  render_scroll_list_header_shadow = true
-  render_scroll_list_footer_shadow = true
-  show_scroll_list_header_footer_preview_in_editor = false
-  repeat_scroll_list_header_texture = false
-  repeat_scroll_list_footer_texture = false
+customization {
+  orientation = top-left
+  hidden = true
+  x = 228
+  width = 504
+  action = deep_customization_element:drippy_overlay_logo
+  actionid = 84dcc7ae-198f-498c-9e95-a2bc8b80ecf41679525058555
+  y = 189
+  height = 126
 }
 
-element {
-  source = [source:local]kubejs/assets/kubejs/textures/images/logo.png
-  repeat_texture = false
-  nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
-  element_type = image
-  instance_identifier = 747914f5-1854-4385-b4e1-d18560fcc6bd1679525097162
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = mid-centered
+customization {
+  custom_color_hex = #2c1430
+  orientation = top-left
+  hidden = false
+  x = -1000000
+  width = 0
+  action = deep_customization_element:drippy_overlay_background
+  actionid = 6d2d32b4-5146-405c-bca8-57ea3f2231191679525058584
+  y = -1000000
+  height = 0
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 87
+  width = 428
+  action = deep_customization_element:drippy_overlay_progress_bar
+  actionid = b67fb59d-aafc-475d-a70f-a507ba1d5be11679525058585
+  y = 352
+  height = 10
+}
+
+customization {
+  path = kubejs/assets/kubejs/textures/images/logo.png
+  orientation = mid-centered
   x = -283
-  y = -159
   width = 567
+  action = addtexture
+  actionid = 747914f5-1854-4385-b4e1-d18560fcc6bd1679525097162
+  y = -159
   height = 320
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = 1f3b44f5-e1e4-4d71-8ec8-b094ca1d805d-1720675591869
-  [loading_requirement_container_meta:1f3b44f5-e1e4-4d71-8ec8-b094ca1d805d-1720675591869] = [groups:][instances:]
 }
 
-element {
-  source = Linux is cool
-  source_mode = direct
-  scale = 1.0
+customization {
+  orientation = mid-centered
+  basecolor = #ffff00
   shadow = true
   rotation = 20.0
-  base_color = #ffff00
+  scale = 1.0
   refresh = false
+  vr:showif:oslinux = true
   bouncing = true
-  element_type = splash_text
-  instance_identifier = 8bd0e0bc-b66e-4128-9d5d-67f7b38f78fa1679772944451
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = mid-centered
-  x = -244
-  y = 73
-  width = 100
-  height = 20
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = c8148e2e-ebf3-44f5-9ed4-2a7b3cfc8588-1720675591869
-  [loading_requirement_container_meta:c8148e2e-ebf3-44f5-9ed4-2a7b3cfc8588-1720675591869] = [groups:][instances:]
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = 32cdeb47-3045-4662-9c7b-6b8bc7753763-1720675591869
-  [executable_block:32cdeb47-3045-4662-9c7b-6b8bc7753763-1720675591869][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mojang_logo
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = vanilla
-  x = 143
-  y = 133
-  width = 354
-  height = 88
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 2ac4c560-ff6a-4d31-9d07-740e58e40d00-1720675591869
-  [loading_requirement_container_meta:2ac4c560-ff6a-4d31-9d07-740e58e40d00-1720675591869] = [groups:][instances:]
-  is_hidden = true
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = 799d07c8-cd07-4097-9b82-d5627f0abc3a-1720675591869
-  [executable_block:799d07c8-cd07-4097-9b82-d5627f0abc3a-1720675591869][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = progress_bar
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = vanilla
-  x = 143
-  y = 289
-  width = 354
-  height = 10
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 1f03d908-5531-4e48-ad9d-82e84ed4533a-1720675591869
-  [loading_requirement_container_meta:1f03d908-5531-4e48-ad9d-82e84ed4533a-1720675591869] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
+  vanilla-like = false
+  x = -238
+  actionid = 8bd0e0bc-b66e-4128-9d5d-67f7b38f78fa1679772944451
+  action = addsplash
+  y = 71
+  text = I use Arch BTW!
 }
 

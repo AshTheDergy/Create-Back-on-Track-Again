@@ -9,9 +9,9 @@ StartupEvents.registry('item', event => {
 	let types = [/*'Nether',*/ 'Certus', 'Fluix']
 	types.forEach(e => {
 		let id = e.toLowerCase()
-		event.create('ae2:' + id + '_crystal_seed').texture("kubejs:item/crystal_seed_certus").displayName(+ e + ' Quartz Seed')
+		event.create('ae2:' + id + '_crystal_seed').texture("kubejs:item/crystal_seed_" + id).displayName(+ e + ' Quartz Seed')
 		//event.create('growing_' + id + '_seed', 'create:sequenced_assembly').texture("ae2:item/crystal_seed_" + id).displayName(e + ' Quartz Seed')
-		event.create('tiny_' + id + '_crystal').texture("kunejs:item/crystal_seed_" + id + "2").displayName('Tiny ' + e + ' Quartz Crystal')
+		event.create('tiny_' + id + '_crystal').texture("kubejs:item/crystal_seed_" + id + "2").displayName('Tiny ' + e + ' Quartz Crystal')
 		//event.create('growing_tiny_' + id + '_crystal', 'create:sequenced_assembly').texture("ae2:item/crystal_seed_" + id + "2").displayName('Tiny ' + e + ' Quartz Crystal')
 		event.create('small_' + id + '_crystal').texture("kubejs:item/crystal_seed_" + id + "3").displayName('Small ' + e + ' Quartz Crystal')		
 		//event.create('growing_small_' + id + '_crystal', 'create:sequenced_assembly').texture("ae2:item/crystal_seed_" + id + "3").displayName('Small ' + e + ' Quartz Crystal')
@@ -124,7 +124,7 @@ StartupEvents.registry('item', event => {
 
 
 	// event.create('alchemical_laser').parentModel("kubejs:block/ponder_laser_lamp_on").displayName('Alchemical Laser (Ponder Entry)').unstackable()
-	event.create('thermal_cast').texture("kubejs:item/thermal_cast").displayName('Thermal Cast').unstackable()
+	//event.create('thermal_cast').texture("kubejs:item/thermal_cast").displayName('Thermal Cast').unstackable()
 
 
 	let atom = (name, color) => {
@@ -138,11 +138,11 @@ StartupEvents.registry('item', event => {
 		.color(1, "#FFFFFF")
 	}
 
-	atom('Brass', 	"#FBCC68")
-	atom('Copper', 	"#EA9162")
-	atom('Zinc',	"#A5C0A0")
-	atom('Gold',	"#FDF897")
-	atom("Geld",	"#70F00F")
+	// atom('Brass', 	"#FBCC68")
+	// atom('Copper', 	"#EA9162")
+	// atom('Zinc',	"#A5C0A0")
+	// atom('Gold',	"#FDF897")
+	// atom("Geld",	"#70F00F")
 
 	// event
 	// 	.create("geld_atom")

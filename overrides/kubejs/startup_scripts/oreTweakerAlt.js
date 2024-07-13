@@ -1,6 +1,6 @@
 // If anyone knows how to fix. Please help :3 @AshTheDergy on discord thankies!
 
-WorldgenEvents.remove(event => {
+/*WorldgenEvents.remove(event => {
     event.removeFeatureById('underground_ores' , [
         "minecraft:redstone_ore",
         // "minecraft:ancient_debris",
@@ -23,7 +23,26 @@ WorldgenEvents.remove(event => {
         // "minecraft:clay",
         // "minecraft:blackstone",
         // "minecraft:andesite",
+        "occultism:silver_ore",
+        "occultism:deepslate_silver_ore",
+        "createindustry:lead_ore",
+        "createindustry:deepslate_lead_ore"
     ])
+})*/
+
+WorldgenEvents.remove(event => {
+    event.removeOres(props => {
+        props.blocks = [
+            "minecraft:redstone_ore",
+            "minecraft:deepslate_redstone_ore",
+            "occultism:silver_ore",
+            "occultism:deepslate_silver_ore",
+            "createindustry:lead_ore",
+            "createindustry:deepslate_lead_ore",
+            "thermal:tin_ore",
+            "thermal:deepslate_tin_ore",
+        ]
+    })
 })
 /*
 event.addOre((ore) => {

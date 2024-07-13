@@ -1,100 +1,320 @@
-type = fancymenu_layout
+type = menu
 
-layout-meta {
-  identifier = title_screen
-  render_custom_elements_behind_vanilla = false
-  last_edited_time = 1720675591883
-  is_enabled = false
-  randommode = true
+customization-meta {
+  identifier = net.minecraft.client.gui.screens.TitleScreen
   randomgroup = 1
+  renderorder = foreground
+  randommode = true
   randomonlyfirsttime = true
-  layout_index = 0
-  [loading_requirement_container_meta:c588bfce-286c-4de8-8f13-8db7138ebab8-1720675901031] = [groups:][instances:]
+  biggerthanheight = 750
+}
+
+customization {
+  path = kubejs/assets/kubejs/textures/images/background2.png
+  action = texturizebackground
 }
 
 customization {
   action = setscale
-  scale = 2.0
+  scale = 2
 }
 
 customization {
+  baseheight = 1007
   action = autoscale
   basewidth = 1920
-  baseheight = 1007
-}
-
-menu_background {
-  image_path = [source:local]kubejs/assets/kubejs/textures/images/background2.png
-  slide = false
-  repeat_texture = false
-  background_type = image
 }
 
 customization {
-  action = backgroundoptions
   keepaspectratio = true
+  action = backgroundoptions
 }
 
-scroll_list_customization {
-  preserve_scroll_list_header_footer_aspect_ratio = true
-  render_scroll_list_header_shadow = true
-  render_scroll_list_footer_shadow = true
-  show_scroll_list_header_footer_preview_in_editor = false
-  repeat_scroll_list_header_texture = false
-  repeat_scroll_list_footer_texture = false
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
+  orientation = bottom-right
+  x = -196
+  action = movebutton
+  y = -10
 }
 
-element {
-  source = [source:local]kubejs/assets/kubejs/textures/images/logo.png
-  repeat_texture = false
-  nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
-  element_type = image
-  instance_identifier = 0c8d8fdd-306a-4945-9b88-b0afdf8242f31677810264290
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 50
+  advanced_posy = 210
+}
+
+customization {
+  advanced_height = 30
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 200
+  action = resizebutton
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/chonk_button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 220
+  advanced_posy = 370
+}
+
+customization {
+  identifier = %id=376322%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 115
+  advanced_posy = 370
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 50
+  advanced_posy = 250
+}
+
+customization {
+  advanced_height = 30
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 200
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/chonk_button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 50
+  advanced_posy = 330
+}
+
+customization {
+  advanced_height = 30
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 200
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/chonk_button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 165
+  advanced_posy = 370
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 50
+  advanced_posy = 170
+}
+
+customization {
+  advanced_height = 30
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 200
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/chonk_button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 50
+  advanced_posy = 290
+}
+
+customization {
+  advanced_height = 30
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 200
+  height = 50
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
+  backgroundnormal = kubejs/assets/kubejs/textures/gui/chonk_button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376346%
+  orientation = top-left
+  x = 0
+  action = movebutton
+  y = 0
+  advanced_posx = 60
+  advanced_posy = 370
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 346
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 9519b7f8-785c-45fd-8e30-2d819b71033e1677809015808
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 108
+  action = deep_customization_element:title_screen_branding
+  actionid = a6586e13-0b29-457b-8ad1-1733c526fea71677809015817
+  y = 462
+  height = 40
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 731
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 1a65341c-a97a-4b7e-ac82-452ec50096d61677809015818
+  y = 484
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 583
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = a4659fb2-d947-450a-a0ae-24312ca201d71677809015818
+  y = 226
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 343
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = bdd12083-7368-4db2-9669-793b2230c31c1677809015819
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = false
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 3303ca95-9037-48b9-a211-ece21ca65faf1677809015819
+  y = 0
+  height = 30
+}
+
+customization {
+  path = kubejs/assets/kubejs/textures/images/logo.png
+  orientation = top-left
+  x = 0
+  width = 330
+  action = addtexture
+  actionid = 0c8d8fdd-306a-4945-9b88-b0afdf8242f31677810264290
+  y = 0
   advanced_posx = -15
   advanced_posy = 25
-  x = 0
-  y = 0
-  width = 330
   height = 183
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = 2c07da4a-842a-438a-9ba4-504296e77956-1720675591884
-  [loading_requirement_container_meta:2c07da4a-842a-438a-9ba4-504296e77956-1720675591884] = [groups:][instances:]
 }
 
-element {
-  source = [source:local]
-  repeat_texture = false
-  nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
-  element_type = image
-  instance_identifier = 7a3f4a89-7ea5-4a82-a27e-53fe0361fd671677809910495
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
+customization {
+  path = 
+  orientation = top-left
   x = 0
-  y = 10
   width = 0
+  action = addtexture
+  actionid = 7a3f4a89-7ea5-4a82-a27e-53fe0361fd671677809910495
+  y = 10
   height = 100
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = 64e60f91-490e-4fdb-92ff-b1f81d6d334f-1720675591884
-  [loading_requirement_container_meta:64e60f91-490e-4fdb-92ff-b1f81d6d334f-1720675591884] = [groups:][instances:]
 }
 
-element {
+customization {
   orientation = bottom-left
   enable_scrolling = false
   shadow = true
@@ -111,451 +331,5 @@ element {
   y = -12
   alignment = left
   height = 12
-  element_type = fancymenu_customization_item_text
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = b3468cab-fdda-497c-96df-07e510f1cec8-1720675591883
-  [executable_block:b3468cab-fdda-497c-96df-07e510f1cec8-1720675591883][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mc_titlescreen_copyright_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = bottom-right
-  x = -196
-  y = -10
-  width = 0
-  height = 0
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = b260cdff-57bf-4293-b5bd-04f746b5d217-1720675591883
-  [loading_requirement_container_meta:b260cdff-57bf-4293-b5bd-04f746b5d217-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = 8d9b8da9-2aad-4af3-9faf-dba013493c6a-1720675591883
-  [executable_block:8d9b8da9-2aad-4af3-9faf-dba013493c6a-1720675591883][type:generic] = [executables:]
-  backgroundnormal = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button.png
-  backgroundhovered = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mc_titlescreen_multiplayer_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
-  advanced_height = 30
-  x = 0
-  y = 0
-  width = 200
-  height = 50
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = e4ec4043-e5b9-44ba-a0bb-829b474b290e-1720675591883
-  [loading_requirement_container_meta:e4ec4043-e5b9-44ba-a0bb-829b474b290e-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = 9acee3c8-66af-44fb-aa49-6cae506d6058-1720675591883
-  [executable_block:9acee3c8-66af-44fb-aa49-6cae506d6058-1720675591883][type:generic] = [executables:]
-  backgroundnormal = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button.png
-  backgroundhovered = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mc_titlescreen_options_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
-  advanced_width = 200
-  advanced_height = 30
-  x = 0
-  y = 0
-  width = 50
-  height = 50
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = 5e86a9c8-f9bb-491f-a058-7017a4a5ffa3-1720675591883
-  [loading_requirement_container_meta:5e86a9c8-f9bb-491f-a058-7017a4a5ffa3-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = abab0cd0-51e9-4345-915f-0375faba9842-1720675591883
-  [executable_block:abab0cd0-51e9-4345-915f-0375faba9842-1720675591883][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = 376346
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
-  x = 0
-  y = 0
-  width = 0
-  height = 0
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = d5088add-24ac-4aa6-a590-e5d9ef1fc5a0-1720675591883
-  [loading_requirement_container_meta:d5088add-24ac-4aa6-a590-e5d9ef1fc5a0-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = bc97e65c-e97f-40f3-a6cc-9f625697ea19-1720675591883
-  [executable_block:bc97e65c-e97f-40f3-a6cc-9f625697ea19-1720675591883][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = 376322
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
-  x = 0
-  y = 0
-  width = 0
-  height = 0
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = 1e06c0ae-b538-4a95-9082-4a3366bdd1b2-1720675591883
-  [loading_requirement_container_meta:1e06c0ae-b538-4a95-9082-4a3366bdd1b2-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = 6ae1f80f-9011-4682-9b8d-47b59a9a5fb3-1720675591883
-  [executable_block:6ae1f80f-9011-4682-9b8d-47b59a9a5fb3-1720675591883][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mc_titlescreen_language_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
-  x = 0
-  y = 0
-  width = 0
-  height = 0
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = 2622b981-d985-4c98-b89c-6f221a84a9a8-1720675591883
-  [loading_requirement_container_meta:2622b981-d985-4c98-b89c-6f221a84a9a8-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = 7253c625-16b3-4163-bbc4-207e44991185-1720675591883
-  [executable_block:7253c625-16b3-4163-bbc4-207e44991185-1720675591883][type:generic] = [executables:]
-  backgroundnormal = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button.png
-  backgroundhovered = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = forge_titlescreen_mods_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
-  advanced_width = 200
-  advanced_height = 30
-  x = 0
-  y = 0
-  width = 50
-  height = 50
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = f23c85fb-f0ca-420a-a79e-39353a67052a-1720675591883
-  [loading_requirement_container_meta:f23c85fb-f0ca-420a-a79e-39353a67052a-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = 359a8bb4-b630-4272-a3ee-8540e467284f-1720675591883
-  [executable_block:359a8bb4-b630-4272-a3ee-8540e467284f-1720675591883][type:generic] = [executables:]
-  backgroundnormal = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button.png
-  backgroundhovered = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mc_titlescreen_singleplayer_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
-  advanced_width = 200
-  advanced_height = 30
-  x = 0
-  y = 0
-  width = 50
-  height = 50
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = 7c01d1fc-7ee3-4f8f-9f17-9db71d849bc8-1720675591883
-  [loading_requirement_container_meta:7c01d1fc-7ee3-4f8f-9f17-9db71d849bc8-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = 63eecc42-c5f3-455d-ab06-9d44a46348f9-1720675591883
-  [executable_block:63eecc42-c5f3-455d-ab06-9d44a46348f9-1720675591883][type:generic] = [executables:]
-  backgroundnormal = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button.png
-  backgroundhovered = [source:local]kubejs/assets/kubejs/textures/gui/chonk_button_hover.png
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mc_titlescreen_quit_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
-  advanced_width = 200
-  advanced_height = 30
-  x = 0
-  y = 0
-  width = 50
-  height = 50
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = 657f079d-9b70-492e-8478-340c8049cad1-1720675591883
-  [loading_requirement_container_meta:657f079d-9b70-492e-8478-340c8049cad1-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = bf06af8a-12e7-4312-853d-50831af63ff5-1720675591883
-  [executable_block:bf06af8a-12e7-4312-853d-50831af63ff5-1720675591883][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mc_titlescreen_accessibility_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-left
-  x = 0
-  y = 0
-  width = 0
-  height = 0
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = 215bfd7d-bf2e-4779-8637-48308b439d3c-1720675591883
-  [loading_requirement_container_meta:215bfd7d-bf2e-4779-8637-48308b439d3c-1720675591883] = [groups:][instances:]
-  is_hidden = false
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-vanilla_button {
-  button_element_executable_block_identifier = 9b0d0c75-5273-4455-9b19-28972347a542-1720675591883
-  [executable_block:9b0d0c75-5273-4455-9b19-28972347a542-1720675591883][type:generic] = [executables:]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  navigatable = true
-  element_type = vanilla_button
-  instance_identifier = mc_titlescreen_realms_button
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = vanilla
-  x = 0
-  y = 0
-  width = 0
-  height = 0
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = false
-  element_loading_requirement_container_identifier = bed650f8-7d3e-4e6e-9c2d-979827f919bb-1720675591883
-  [loading_requirement_container_meta:bed650f8-7d3e-4e6e-9c2d-979827f919bb-1720675591883] = [groups:][instances:]
-  is_hidden = true
-  automated_button_clicks = 0
-  nine_slice_slider_handle = false
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-}
-
-deep_element {
-  orientation = top-left
-  hidden = false
-  x = 346
-  width = 268
-  action = deep_customization_element:title_screen_forge_top
-  actionid = 9519b7f8-785c-45fd-8e30-2d819b71033e1677809015808
-  y = 4
-  height = 19
-  element_type = title_screen_forge_top
-}
-
-deep_element {
-  orientation = top-left
-  hidden = true
-  x = 2
-  width = 108
-  action = deep_customization_element:title_screen_branding
-  actionid = a6586e13-0b29-457b-8ad1-1733c526fea71677809015817
-  y = 462
-  height = 40
-  element_type = title_screen_branding
-}
-
-deep_element {
-  orientation = top-left
-  hidden = true
-  x = 731
-  width = 228
-  action = deep_customization_element:title_screen_forge_copyright
-  actionid = 1a65341c-a97a-4b7e-ac82-452ec50096d61677809015818
-  y = 484
-  height = 9
-  element_type = title_screen_forge_copyright
-}
-
-deep_element {
-  orientation = top-left
-  hidden = true
-  x = 583
-  width = 13
-  action = deep_customization_element:title_screen_realms_notification
-  actionid = a4659fb2-d947-450a-a0ae-24312ca201d71677809015818
-  y = 226
-  height = 13
-  element_type = title_screen_realms_notification
-}
-
-deep_element {
-  orientation = top-left
-  hidden = true
-  x = 343
-  width = 274
-  action = deep_customization_element:title_screen_logo
-  actionid = bdd12083-7368-4db2-9669-793b2230c31c1677809015819
-  y = 30
-  height = 52
-  element_type = title_screen_logo
-}
-
-deep_element {
-  orientation = original
-  splash_color = #ffff00
-  hidden = false
-  x = 0
-  width = 60
-  splash_rotation = -20
-  action = deep_customization_element:title_screen_splash
-  actionid = 3303ca95-9037-48b9-a211-ece21ca65faf1677809015819
-  y = 0
-  height = 30
-  element_type = title_screen_splash
 }
 

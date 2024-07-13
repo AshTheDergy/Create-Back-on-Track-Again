@@ -170,7 +170,7 @@
 		# Scale of minimap
 		# Default: 1.0
 		# Range: 0.25 ~ 4.0
-		scale: 1.0d
+		scale: 1.4d
 		
 		# Draw a square minimap instead of a circular one
 		# Default: false

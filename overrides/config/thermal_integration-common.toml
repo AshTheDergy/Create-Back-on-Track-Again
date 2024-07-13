@@ -16,8 +16,6 @@
 	"Farmer's Delight" = true
 	#If TRUE, mod integration support for Immersive Engineering is enabled, if the mod is loaded.
 	"Immersive Engineering" = true
-	#If TRUE, mod integration support for Mekanism is enabled, if the mod is loaded.
-	Mekanism = true
 	#If TRUE, mod integration support for Mystical Agriculture is enabled, if the mod is loaded.
 	"Mystical Agriculture" = true
 	#If TRUE, mod integration support for Quark is enabled, if the mod is loaded.
